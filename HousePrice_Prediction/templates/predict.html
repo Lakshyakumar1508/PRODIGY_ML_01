@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Predict Page</title>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1"> 
+    
+    <style>
+        body{
+            background-color:rgb(252, 228, 196);
+            background-size:cover;
+            background-repeat:no-repeat;
+
+        }
+        p{
+            font-size: 20px;
+        }
+        .main{
+            position:fixed;
+            top:120px;
+            left:410px;
+            width:700px;
+            background-color:gainsboro;
+            align-items:center;
+            border-radius:5%;
+        }
+        div{
+            padding:15px;
+        }
+        input[type=submit]{
+            background-color:Black;
+            color:white;
+            cursor:pointer;
+            padding: 16px 32px;
+        }
+        h1{
+            font-size:40px;
+        }
+        h2{
+            font-size:30px;
+            color:DarkRed;
+        }
+    </style>
+</head>
+<body style="text-align: center;">
+     <div class=""main>
+        <h1> Please enter the following values </h1>
+        <form action="result">
+            <div class="row ">
+                <div class="col-sm-4" style="background-color: rgb(189, 231, 231);">
+                    <p>Avg.Area Income</p>
+                    <input type="text" name="n1">
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(228, 211, 143);">
+                    <p>Avg.Area House Age</p>
+                    <input type="text" name="n2">
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(233, 188, 120);">
+                    <p>Avg.Area Numbber of Rooms</p>
+                    <input type="text" name="n3">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4" style="background-color:turquoise;">
+                    <p>Avg.Area Number of Bedrooms</p>
+                    <input type="text" name="n4">
+                </div> 
+                <div class="col-sm-4" style="background-color:rosybrown;">
+                    <p>Avg.Area Popoluation</p>
+                    <input type="text" name="n5">
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit"  value="PREDICT">
+            </div>
+        </form>
+        <div class="row">
+            <h2>{{result2}}</h2>
+        </div>
+            
+     </div>
+</body>
+</html>
